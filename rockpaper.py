@@ -18,36 +18,34 @@ for i in range (10):
 
   if choice == comp_choice:
     print(f"{tie} \n")
-    print()
-    output = present.append(tie)
+    present.append(tie)
   elif choice == "rock":
     if comp_choice == "scissor":
       print("You win! \n")
       player = player + 1
-      output = present.append(pw)
+      present.append(pw)
     else:
       print("Computer won \n")
       comp = comp + 1
-      output = present.append(cw)
+      present.append(cw)
   elif choice == "paper":
     if comp_choice == "rock":
       print("You win! \n")
       player = player + 1
-      output = present.append(pw)
+      present.append(pw)
     else:
       print("Computer won \n")
       comp = comp + 1
-      output = present.append(cw)
+      present.append(cw)
   elif choice == "scissor":
     if comp_choice == "paper":
       print("You win! \n")
       player = player + 1
-      output = present.append(pw)
+      present.append(pw)
     else:
       print("Computer won \n")
       comp = comp + 1
-
-      output = present.append(cw)
+      present.append(cw)
   moves[i+1] = present
 
 if(player>comp):
@@ -67,6 +65,6 @@ while x == "y":
     if(moves[round_val][2]=="Tie"):
       print(" Its a Tie \n")
     else:
-      print(f" {moves[round_val][2]} won Round {round_val} \n")
+      print(f" {moves[round_val][2]} Round {round_val} \n")
 
   x = input("Do you want to again check 'y or n':")
