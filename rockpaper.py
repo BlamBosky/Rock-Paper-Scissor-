@@ -17,13 +17,9 @@ for i in range (10):
   user_choice = int(input("Enter your choice for round {}: ".format(i+1)))
   comp_outcome = [1, 2, 3]
   comp_choice = random.choice(comp_outcome)
-  pw = "Player won"
-  cw = "Computer won"
-  tie = "Tie"
   c=test(user_choice,comp_choice)  
   present[:3]=[user_choice,comp_choice,c]
-  moves[i+1] = present
-  
+  moves[i+1] = present  
 round_val = int(input("Enter the round for which you need the instruction : "))
 if round_val>10:
     print("Invalid input")
@@ -32,4 +28,4 @@ else:
     if(moves[round_val][2]=="Tie"):
       print("Its a Tie \n")
     else:
-      print(f"{moves[round_val][2]} Round {round_val} \n"
+      print(f"{moves[round_val][2]} Round {round_val} \n")
